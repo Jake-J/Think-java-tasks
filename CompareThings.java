@@ -54,6 +54,5 @@ public class CompareThings {
         System.out.println("==========================");
         System.out.println("no && !no || yes && !yes");
         System.out.println(no && !no || yes && !yes);
-
     }
 }
