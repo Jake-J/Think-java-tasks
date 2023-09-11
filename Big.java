@@ -1,4 +1,6 @@
 import java.util.stream.IntStream;
+import java.math.BigInteger;
+
 
 public class Big {
     public static void main(String[] args) {
@@ -9,14 +11,14 @@ public class Big {
         }
     }
 
-    public static long factorial(int n) {
+    public static BigInteger factorial(int n) {
         if (n == 0) {
-           return 1;
+           return BigInteger.ONE;
         }
 
-        long result = 1;
+        BigInteger result = BigInteger.ONE;
         for (int i = n; i > 0; i--) {
-            result *= i;
+            result = result.multiply(BigInteger.valueOf(i));
         }
 
         return result;
